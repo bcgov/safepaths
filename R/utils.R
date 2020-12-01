@@ -13,6 +13,9 @@
 
 #' Use a stored network path
 #'
+#' This will get and use a stored network path in conjunction with a provided file or
+#' folder path.
+#'
 #' @param ... path elements (character). Path to a network folder or file, relative to `get_network_path()`.
 #'            Individual components will be combined with [file.path()]
 #'

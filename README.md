@@ -2,7 +2,7 @@
 
 ## safepaths
 
-An R package 📦 to safely set & use a path to a private network folder.
+An R package 📦 to safely set & use a path to a private network.
 
 ### Features
 
@@ -24,9 +24,24 @@ install_github("bcgov/safepaths")
 ```
 
 
-### Usage
+### Functions
 
+The package has 3 functions to safely set & use a path to a private network:
 
+ - `set_network_path()`: adds an environment variable called `NETWORK_PATH` to
+    your `.Renviron` file and sets the variable to a provided network
+    path.
+    
+ - `get_network_path()`: retrieve the environment variable `NETWORK_PATH`, which you stored in your `.Renviron` file using `set_network_path()`.
+ 
+ - `use_network_path()`: get and use your stored network path in conjunction with a  provided file or folder path. 
+ 
+ 
+```{r}
+use_network_path("file.csv")
+
+use_network_path("folder_name/file.csv")
+```
 
 ### Project Status
 

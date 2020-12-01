@@ -6,26 +6,6 @@ An R package 📦 to safely set & use a path to a private network.
 
 ### Features
 
-### Installation
-
-You can install the package directly from this repository. To do so, you
-will need the [remotes](https://github.com/hadley/devtools/) package:
-
-``` r
-install.packages("remotes")
-```
-
-Next, install `safepaths` package using
-`remotes::install_github()`:
-
-``` r
-library("remotes")
-install_github("bcgov/safepaths")
-```
-
-
-### Functions
-
 The package has 3 functions to safely set & use a path to a private network:
 
  - `set_network_path()`: adds an environment variable called `NETWORK_PATH` to
@@ -41,6 +21,23 @@ The package has 3 functions to safely set & use a path to a private network:
 use_network_path("file.csv")
 
 use_network_path("folder_name/file.csv")
+```
+
+### Installation
+
+You can install the package directly from this repository. To do so, you
+will need the [remotes](https://github.com/hadley/devtools/) package:
+
+``` r
+install.packages("remotes")
+```
+
+Next, install `safepaths` package using
+`remotes::install_github()`:
+
+``` r
+library("remotes")
+install_github("bcgov/safepaths")
 ```
 
 ### Project Status

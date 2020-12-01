@@ -46,7 +46,7 @@ path relative to the network path set with `set_network_path()`.")
 
 #' Set a network path
 #'
-#' This will add an environment variable called `NETWORK_PATH` to
+#' This will add an environment variable called `SAFEPATHS_NETWORK_PATH` to
 #' your `.Renviron` file and set the variable to the provided network
 #' path.
 #'
@@ -92,7 +92,7 @@ set_network_path <- function(x) {
 
 #' Get network path
 #'
-#' This will retrieve the environment variable `NETWORK_PATH`, which is stored in
+#' This will retrieve the environment variable `SAFEPATHS_NETWORK_PATH`, which is stored in
 #' your `.Renviron` file using `set_network_path()`.
 #'
 #'
@@ -111,4 +111,4 @@ get_network_path <- function() {
   network_path
 }
 
-path_envvar_name <- function() "NETWORK_PATH"
+path_envvar_name <- function() "SAFEPATHS_NETWORK_PATH"

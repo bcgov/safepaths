@@ -16,7 +16,7 @@ For Windows users, you can use the mapped drive letter or the UNC path
 logical (invisibly)
 }
 \description{
-This will add an environment variable called \code{NETWORK_PATH} to
+This will add an environment variable called \code{SAFEPATHS_NETWORK_PATH} to
 your \code{.Renviron} file and set the variable to the provided network
 path.
 }

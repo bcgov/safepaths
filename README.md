@@ -8,11 +8,11 @@ An R package 📦 to safely set & use a path to a private network.
 
 The package has 3 functions to safely set & use a path to a private network:
 
- - `set_network_path()`: adds an environment variable called `NETWORK_PATH` to
+ - `set_network_path()`: adds an environment variable called `SAFEPATHS_NETWORK_PATH` to
     your `.Renviron` file and sets the variable to a provided network
     path.
     
- - `get_network_path()`: retrieves the environment variable `NETWORK_PATH`, which is stored in your `.Renviron` file using `set_network_path()`.
+ - `get_network_path()`: retrieves the environment variable `SAFEPATHS_NETWORK_PATH`, which is stored in your `.Renviron` file using `set_network_path()`.
  
  - `use_network_path()`: retrieves and uses the stored network path in conjunction with a  provided file or folder path. 
  

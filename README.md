@@ -19,7 +19,6 @@ The package has 3 functions to safely set & use a path to a private network:
  
 ```{r}
 use_network_path("file.csv")
-
 use_network_path("folder_name/file.csv")
 ```
 

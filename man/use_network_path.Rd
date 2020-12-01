@@ -14,12 +14,14 @@ Individual components will be combined with \code{\link[=file.path]{file.path()}
 full path to a folder or file
 }
 \description{
-Use a stored network path
+This will get and use a stored network path in conjunction with a provided file or
+folder path.
 }
 \examples{
 \dontrun{
-use_network_path("folder_name3/")
+use_network_path("file.csv")
+use_network_path("folder_name/file.csv")
 # In a function call:
-read.csv(use_network_path("folder_name3/data/file.csv"))
+read.csv(use_network_path("folder_name/file.csv"))
 }
 }

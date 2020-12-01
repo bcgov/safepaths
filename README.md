@@ -1,30 +1,36 @@
-<!-- 
-Add a project state badge
+[![img](https://img.shields.io/badge/Lifecycle-Experimental-339999)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
 
-See <https://github.com/BCDevExchange/Our-Project-Docs/blob/master/discussion/projectstates.md> 
-If you have bcgovr installed and you use RStudio, click the 'Insert BCDevex Badge' Addin.
--->
+## safepaths
 
-safepaths
-============
-
-Description of package
+An R package 📦 to safely set & use a path to a private network folder.
 
 ### Features
 
 ### Installation
 
-### Usage
+You can install the package directly from this repository. To do so, you
+will need the [remotes](https://github.com/hadley/devtools/) package:
 
-#### Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-## basic example code
+``` r
+install.packages("remotes")
 ```
 
+Next, install `safepaths` package using
+`remotes::install_github()`:
+
+``` r
+library("remotes")
+install_github("bcgov/safepaths")
+```
+
+
+### Usage
+
+
+
 ### Project Status
+
+In Progress
 
 ### Getting Help or Reporting an Issue
 

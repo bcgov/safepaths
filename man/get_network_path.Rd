@@ -10,7 +10,7 @@ get_network_path()
 stored network path
 }
 \description{
-This will retrieve the environment variable \code{NETWORK_PATH}, which you stored in
+This will retrieve the environment variable \code{NETWORK_PATH}, which is stored in
 your \code{.Renviron} file using \code{set_network_path()}.
 }
 \examples{

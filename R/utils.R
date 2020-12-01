@@ -13,7 +13,7 @@
 
 #' Use a stored network path
 #'
-#' This will get and use a stored network path in conjunction with a provided file or
+#' This will retrieve and use a stored network path in conjunction with a provided file or
 #' folder path.
 #'
 #' @param ... path elements (character). Path to a network folder or file, relative to `get_network_path()`.
@@ -92,7 +92,7 @@ set_network_path <- function(x) {
 
 #' Get network path
 #'
-#' This will retrieve the environment variable `NETWORK_PATH`, which you stored in
+#' This will retrieve the environment variable `NETWORK_PATH`, which is stored in
 #' your `.Renviron` file using `set_network_path()`.
 #'
 #'

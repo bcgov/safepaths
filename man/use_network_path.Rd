@@ -14,7 +14,7 @@ Individual components will be combined with \code{\link[=file.path]{file.path()}
 full path to a folder or file
 }
 \description{
-This will get and use a stored network path in conjunction with a provided file or
+This will retrieve and use a stored network path in conjunction with a provided file or
 folder path.
 }
 \examples{

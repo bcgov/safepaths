@@ -32,9 +32,9 @@ The package has 3 functions to safely set & use a path to a private network:
     your `.Renviron` file and sets the variable to a provided network
     path.
     
- - `get_network_path()`: retrieve the environment variable `NETWORK_PATH`, which you stored in your `.Renviron` file using `set_network_path()`.
+ - `get_network_path()`: retrieves the environment variable `NETWORK_PATH`, which is stored in your `.Renviron` file using `set_network_path()`.
  
- - `use_network_path()`: get and use your stored network path in conjunction with a  provided file or folder path. 
+ - `use_network_path()`: retrieves and uses the stored network path in conjunction with a  provided file or folder path. 
  
  
 ```{r}

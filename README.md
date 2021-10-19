@@ -1,4 +1,4 @@
-[![img](https://img.shields.io/badge/Lifecycle-Experimental-339999)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![img](https://img.shields.io/badge/Lifecycle-Stable-97ca00)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## safepaths
 
@@ -39,9 +39,12 @@ library("remotes")
 install_github("bcgov/safepaths")
 ```
 
-### Project Status
+### Tips for Finding the Network Path
 
-In Progress
+- *For Windows users*: you can use the mapped drive letter or the UNC network path,
+e.g., `"P:/folder_name"` or `"//UNC_path"`.
+- *For Mac users*: your mounted network path will look something like `"/Volumes/server_name/folder_name"`. You can find the `server_name` for mounted remote drives by opening the Terminal and asking with this code `ls /Volumes`.
+
 
 ### Getting Help or Reporting an Issue
 

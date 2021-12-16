@@ -40,6 +40,9 @@ path relative to the network path set with `set_network_path()`.")
   if (!dir.exists(root)) {
     stop(root, " Does not exist. Are you connected to the network?")
   }
+
+  if (length(x) == 0) return(root)
+
   file.path(root, gsub("^/", "", x))
 }
 

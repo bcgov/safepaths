@@ -112,7 +112,7 @@ set_network_path <- function(x) {
 get_network_path <- function() {
   network_path <- Sys.getenv(path_envvar_name())
 
-  safepaths_sit_rep()
+  safepaths_sitrep()
   network_path
 }
 
@@ -125,7 +125,7 @@ get_network_path <- function() {
 #'
 #' @export
 
-safepaths_sit_rep <- function() {
+safepaths_sitrep <- function() {
   check_if_set()
   check_if_available()
   message("safepath set and accessible")

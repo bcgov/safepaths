@@ -112,12 +112,29 @@ set_network_path <- function(x) {
 get_network_path <- function() {
   network_path <- Sys.getenv(path_envvar_name())
 
-  check_if_set()
-  check_if_available()
+  safepaths_sit_rep()
   network_path
 }
 
+
+#' Check to see if a setpath is set and accessible
+#'
+#' This function can be helpful to detect instances where you might not have
+#' the path set or are connected to VPN. If you are not connected or the path is
+#' not set, the function will. Otherwise, the function will return `TRUE` invisibly.
+#'
+#' @export
+
+safepaths_sit_rep <- function() {
+  check_if_set()
+  check_if_available()
+  message("safepath set and accessible")
+  invisible(TRUE)
+}
+
 path_envvar_name <- function() "SAFEPATHS_NETWORK_PATH"
+
+
 
 check_if_set <- function() {
   if (!nzchar(Sys.getenv(path_envvar_name()))) {

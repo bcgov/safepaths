@@ -33,7 +33,7 @@ use_network_path <- function(...) {
   x <- list(...)
   if (!all(vapply(x, is.character, FUN.VALUE = logical(1)))) {
     stop("x must be a character string denoting a
-path relative to the network path set with `set_network_path()`.")
+          path relative to the network path set with `set_network_path()`.")
   }
   x <- do.call(file.path, x)
   root <- get_network_path()
@@ -41,7 +41,9 @@ path relative to the network path set with `set_network_path()`.")
     stop(root, " Does not exist. Are you connected to the network?")
   }
 
-  if (length(x) == 0) return(root)
+  if (length(x) == 0) {
+    return(root)
+  }
 
   file.path(root, gsub("^/", "", x))
 }
@@ -75,7 +77,7 @@ set_network_path <- function(x) {
 # (path beginning with \\). Please use the mapped drive letter (e.g., P:/etc).",
 #          call. = FALSE)
 # }
-  check_if_available()
+
   home_dir <- Sys.getenv("HOME")
   renviron_file <- file.path(home_dir, ".Renviron")
   renviron_lines <- readLines(renviron_file)
@@ -108,18 +110,22 @@ set_network_path <- function(x) {
 #' get_network_path()
 #' }
 get_network_path <- function() {
-  check_if_available()
   network_path <- Sys.getenv(path_envvar_name())
-  if (!nzchar(network_path)) {
-    stop("You need to set your network path. Use set_network_path()", call. = FALSE)
-  }
+
+  check_if_set()
+  check_if_available()
   network_path
 }
 
 path_envvar_name <- function() "SAFEPATHS_NETWORK_PATH"
 
-check_if_available <- function() {
+check_if_set <- function() {
+  if (!nzchar(Sys.getenv(path_envvar_name()))) {
+    stop("You need to set your network path. Use set_network_path()", call. = FALSE)
+  }
+}
 
+check_if_available <- function() {
   if (!dir.exists(Sys.getenv(path_envvar_name()))) {
     stop("There has been a problem. Are you sure you are connected to the VPN?", call. = FALSE)
   }

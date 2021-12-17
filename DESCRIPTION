@@ -2,22 +2,22 @@ Package: safepaths
 Title: Safely Set & Use a Path to a Private Network Folder 
 Version: 0.1.0
 Authors@R: 
-    person(given = "Sam",
+    c(person(given = "Sam",
              family = "Albers",
-             role = c("aut", "crea"),
+             role = c("aut", "cre"),
              email = "sam.albers@gov.bc.ca",
              comment = c(ORCID = "0000-0002-9270-7884")),
-  c(person(given = "Stephanie",
+     person(given = "Stephanie",
              family = "Hazlitt",
              role = c("aut"),
              email = "stephanie.hazlitt@gov.bc.ca",
              comment = c(ORCID = "0000-0002-3161-2304")),
-    person(given = "Andy",
+     person(given = "Andy",
              family = "Teucher",
              role = c("aut"),
              email = "andy.teucher@gov.bc.ca",
              comment = c(ORCID = "0000-0002-7840-692X")),
-    person(given = "Province of British Columbia",
+     person(given = "Province of British Columbia",
              role = "cph"))
 Description: .
 URL: https://github.com/bcgov/safepaths
